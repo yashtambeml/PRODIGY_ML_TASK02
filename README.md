@@ -1,67 +1,88 @@
-# 🧠 Customer Segmentation using K-Means Clustering
-
-This project was developed as part of my Machine Learning Internship at Prodigy Infotech. It focuses on applying unsupervised learning techniques to segment customers based on their purchasing behavior.
-
----
-
-## 📌 Project Overview
-
-Customer segmentation is a key business strategy used to understand different groups within a customer base. In this project, the K-Means clustering algorithm is used to group customers of a retail store based on:
-
-- Annual Income (k$)
-- Spending Score (1–100)
-
-The goal is to identify distinct customer segments that can help businesses optimize marketing strategies and improve customer engagement.
+# 🚀 PRODIGY_ML_TASK02  
+## 📊 Customer Segmentation using K-Means Clustering
 
 ---
 
-## ⚙️ Methodology
+## ✨ Overview
+This project performs **Customer Segmentation** using the **K-Means Clustering algorithm**.  
+It groups customers based on **Annual Income** and **Spending Score**, helping businesses understand customer behavior and improve targeting strategies.
 
-The following steps were performed:
-
-1. **Data Collection**
-   - Imported dataset from Kaggle
-
-2. **Data Preprocessing**
-   - Selected relevant numerical features
-   - Checked for consistency and structure
-
-3. **Exploratory Analysis**
-   - Visualized relationships between income and spending
-
-4. **Optimal Cluster Selection**
-   - Applied the Elbow Method to determine the ideal number of clusters
-
-5. **Model Implementation**
-   - Used K-Means clustering algorithm from Scikit-learn
-
-6. **Visualization**
-   - Plotted customer segments and cluster centroids
+The **Elbow Method** is used to determine the optimal number of clusters.
 
 ---
 
-## 📊 Results & Insights
-
-- Customers were segmented into **5 distinct clusters**
-- Each cluster represents a unique purchasing pattern:
-  - High Income – High Spending
-  - High Income – Low Spending
-  - Low Income – High Spending
-  - Low Income – Low Spending
-  - Average Income – Average Spending
-
-These insights can help businesses:
-- Design targeted marketing campaigns
-- Improve customer retention strategies
-- Identify high-value customers
+## 🎯 Objective
+To segment customers into meaningful groups for:
+- Better marketing strategies  
+- Customer behavior analysis  
+- Business decision making  
 
 ---
 
-## 🧠 Algorithm Details
-
-- **Algorithm:** K-Means Clustering  
-- **Type:** Unsupervised Learning  
-- **Library Used:** Scikit-learn  
+## 📂 Dataset
+- 📌 Source: Kaggle (Mall Customers Dataset)  
+- 📊 Features used:
+  - Annual Income (k$)
+  - Spending Score (1–100)
 
 ---
+
+## ⚙️ Tech Stack
+- Python 🐍  
+- Pandas 📊  
+- Matplotlib 📈  
+- Scikit-learn 🤖  
+
+---
+
+## 🧠 Machine Learning Workflow
+
+### 1️⃣ Data Loading
+Load and inspect dataset using Pandas.
+
+### 2️⃣ Feature Selection
+Select relevant features:
+- Annual Income
+- Spending Score
+
+### 3️⃣ Elbow Method
+Used to find optimal number of clusters (K).
+
+### 4️⃣ K-Means Clustering
+Train model and assign customers to clusters.
+
+### 5️⃣ Visualization
+Plot clusters and centroids for interpretation.
+
+---
+
+## 📉 Elbow Method Insight
+The Elbow Method helps identify the best K value by plotting WCSS vs K.
+
+👉 The “elbow point” = optimal clusters
+
+---
+
+## 📊 Results
+Customers are segmented into:
+
+- 💰 High Income – High Spending (Premium customers)
+- 💰 High Income – Low Spending (Careful spenders)
+- 💸 Low Income – High Spending (Target buyers)
+- 💸 Low Income – Low Spending (Low priority)
+
+---
+
+## 📸 Output Preview
+- Elbow graph 📉  
+- Cluster visualization 📊  
+- Centroids (black points) ⚫  
+
+---
+
+## 🚀 How to Run
+
+```bash
+# Install dependencies
+pip install pandas matplotlib scikit-learn
 
